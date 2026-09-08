@@ -4,6 +4,11 @@ Full-stack educational platform with a subscription process for courses, built w
 
 ---
 
+## 🎥 Project Demo
+
+[Click here to watch the full walkthrough video](https://drive.google.com/file/d/1p4Z3_kt9Xh134vdXqNaLl8Dt5bvqMqQg/view?usp=sharing)
+
+---
 ## ✨ Key Features
 - **User Authentication:** Login, Register, and Profile management using Laravel Breeze.
 - **Course Browsing & Filtering:** Filter courses by categories.
