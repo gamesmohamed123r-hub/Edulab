@@ -1,0 +1,64 @@
+                                 (( data base for education template ))
+
+1-User_table:
+id : int 11 , primarykey , autoincrement , defualt(none)
+name : varchar 255  , defualt(none) 
+email : varchar 255 , defualt(none)
+password : varchar 255 , defualt(none)
+phone : varchar 20 , defualt(null)
+status : enum '0','1' , defualt(none)
+role : enum 'user','admin' , defualt(none)
+created_at : timestamp(null)
+updated_at : timestamp(null)                                   ((تم التدمير))
+
+=================================================================================
+
+2-category_table:
+id : int 11 , primarykey , autoincrement , defualt(none)
+cate_image : VARCHAR 2048 , defualt(null)
+title_en : varchar 255 , defualt(none)
+title_ar : varchar 255 , defualt(none)
+description_en: varchar 255 , defualt(none)
+description_ar: varchar 255 , defualt(none)
+status : enum '0','1' , defualt(none)
+created_at : timestamp(null)
+updated_at : timestamp(null)                                     ((تم التدمير))
+
+=================================================================================
+
+3-courses_table:
+id : int 11 , primarykey , autoincrement , defualt(none)
+cour_image : VARCHAR 2048 , defualt(null)
+title_en : varchar 255 , defualt(none)
+title_ar : varchar 255 , defualt(none)
+description_en: varchar 255 , defualt(none)
+description_ar: varchar 255 , defualt(none)
+status : enum '0','1' , defualt(none)
+price : decimal(10,2)         <-- إضافة (سعر الكورس)
+category_id : int 11 , defualt(none)     ====> note:Relation ship with category_table forign_key
+created_at : timestamp(null)
+updated_at : timestamp(null)
+
+=================================================================================
+
+4-lessons_table:
+id : int 11 , primarykey , autoincrement , defualt(none)
+title_en : varchar 255 , defualt(none)
+title_ar : varchar 255 , defualt(none)
+video_url : varchar 2048 ,defualt(null)
+courses_id : int 11 , defualt(none)     ====> note:Relation ship with courses_id forign_key
+created_at : timestamp(null)
+updated_at : timestamp(null)
+
+=================================================================================
+
+5-enrollment_table:
+id : int 11 , primarykey , autoincrement , defualt(none)
+user_id : int 11 , defualt(none)     ====> note:Relation ship with user_id forign_key
+courses_id : int 11 , defualt(none)     ====> note:Relation ship with courses_id forign_key
+paid_amount : decimal(10,2)   <-- إضافة (المبلغ المدفوع)
+- payment_status : enum('pending', 'paid', 'failed') <-- إضافة لتحديد حالة الدفع
+- transaction_id : varchar 255  <-- إضافة (رقم العملية من بوابة الدفع)
+status : enum '0','1' , defualt(none)
+created_at : timestamp(null)
+updated_at : timestamp(null)
