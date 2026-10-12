@@ -6,7 +6,7 @@ Full-stack educational platform with a subscription process for courses, built w
 
 ## 🎥 Project Demo
 
-[Click here to watch the full walkthrough video](https://drive.google.com/file/d/1p4Z3_kt9Xh134vdXqNaLl8Dt5bvqMqQg/view?usp=sharing)
+[Click here to watch the full walkthrough video](https://drive.google.com/file/d/1EGy1wBYf18_gYSO9prOQXK_v8DAlZa8G/view?usp=sharing)
 
 ---
 
